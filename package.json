@@ -1,0 +1,12 @@
+{
+  "source": "./opam",
+  "override": {
+    "dependencies": {
+      "ocp-build": "*"
+    },
+    "resolutions": {
+      "ocp-build": "github:Et7f3/ocp-build#94f0f92",
+      "ocplib-utils-js": "github:OCamlPro/ocplib-jsutils:opam#03d592b"
+    }
+  }
+}

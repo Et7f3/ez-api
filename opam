@@ -20,6 +20,7 @@ build: [
   [     "./configure"
     "--prefix"
     "%{prefix}%"
+    "--host=x86_64-w64-mingw32"
   ]
   [ make ]
 ]
@@ -31,20 +32,21 @@ remove: [
 available: [ocaml-version >= "4.03.0"]
 depends: [
      "base64"
-     "camlp4"
      "cohttp-lwt" {>= "0.99.0" }
      "cohttp-lwt-unix"
      "ezjsonm"
-     "geoip"
      "js_of_ocaml"
-     "js_of_ocaml-camlp4"
      "js_of_ocaml-ppx"
      "js_of_ocaml-tyxml"
      "ocamlfind"
-     "ocp-build"
      "ocplib-endian"
      "ocplib-json-typed"
-     "ocurl"
      "omd"
      "re"
+     "ipaddr" { = "2.9.0"}
+     "calendar"
+     "ppx_deriving"
+     "lwt_log"
+     "js_of_ocaml-ocamlbuild"
+     "js_of_ocaml-lwt"
 ]

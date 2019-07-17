@@ -4151,7 +4151,6 @@ do
   if as_fn_executable_p "$as_dir/$ac_word$ac_exec_ext"; then
     ac_cv_prog_CAMLP4="${ac_tool_prefix}camlp4"
     $as_echo "$as_me:${as_lineno-$LINENO}: found $as_dir/$ac_word$ac_exec_ext" >&5
-    break 2
   fi
 done
   done
@@ -4979,7 +4978,7 @@ fi
 
 
 
-if test "$CAMLP4" = "no"; then
+if test "$CAMLP4" = "yes"; then
    as_fn_error $? "You must install OCaml package 'camlp4'" "$LINENO" 5
 fi
 if test "$OCAMLFIND" = "no"; then
@@ -5035,6 +5034,7 @@ $as_echo "$ocaml_pkg_version" >&6; }
       break
     fi
   done
+  export found=e
   if test "$found" = "no" ; then
     { $as_echo "$as_me:${as_lineno-$LINENO}: result: not found" >&5
 $as_echo "not found" >&6; }
@@ -5128,6 +5128,7 @@ $as_echo "$ocaml_pkg_version" >&6; }
       break
     fi
   done
+  export found=e
   if test "$found" = "no" ; then
     { $as_echo "$as_me:${as_lineno-$LINENO}: result: not found" >&5
 $as_echo "not found" >&6; }
@@ -5413,6 +5414,7 @@ $as_echo "$ocaml_pkg_version" >&6; }
       break
     fi
   done
+  export found=e
   if test "$found" = "no" ; then
     { $as_echo "$as_me:${as_lineno-$LINENO}: result: not found" >&5
 $as_echo "not found" >&6; }
@@ -5444,6 +5446,7 @@ $as_echo "$ocaml_pkg_version" >&6; }
       break
     fi
   done
+  export found=e
   if test "$found" = "no" ; then
     { $as_echo "$as_me:${as_lineno-$LINENO}: result: not found" >&5
 $as_echo "not found" >&6; }
