@@ -1,0 +1,37 @@
+{
+  "esy":{
+    "build": [
+      "echo host x86_64-w64-mingw32 can change in future",
+      "#{self.root}/configure #{os == 'windows' ? '--host x86_64-w64-mingw32' : ''} --prefix #{self.install} --exec-prefix #{self.install} --bindir #{self.install}/bin --libdir #{self.install}/lib --with-ocamldir=#{self.install}/lib/ocaml --datarootdir #{self.install}/share --mandir #{self.install}/share/man",
+      "make"
+    ],
+    "install": ["make install"]
+  },
+  "buildsInSource": false,
+  "dependencies": {
+    "@opam/base64": "*",
+    "@opam/cohttp-lwt": ">=0.99.0",
+    "@opam/cohttp-lwt-unix": "*",
+    "@opam/ezjsonm": "*",
+    "@opam/js_of_ocaml": "*",
+    "@opam/js_of_ocaml-ppx": "*",
+    "@opam/js_of_ocaml-tyxml": "*",
+    "@opam/ocamlfind": "*",
+    "@opam/ocplib-endian": "*",
+    "@opam/ocplib-json-typed": "*",
+    "@opam/omd": "*",
+    "@opam/re": "*",
+    "@opam/ipaddr": "=2.9.0",
+    "@opam/calendar": "*",
+    "@opam/ppx_deriving": "*",
+    "@opam/lwt_log": "*",
+    "@opam/js_of_ocaml-ocamlbuild": "*",
+    "@opam/js_of_ocaml-lwt": "*",
+    "ocp-build": "*",
+    "ocaml": "<4.8.0"
+  },
+  "resolutions": {
+    "ocp-build": "github:Et7f3/ocp-build#94f0f92",
+    "ocplib-utils-js": "github:OCamlPro/ocplib-jsutils:opam#03d592b"
+  }
+}

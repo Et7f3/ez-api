@@ -2,11 +2,13 @@
 autoconf/Makefile.config: autoconf/configure
 	./configure $(CONFIGURE_ARGS)
 
+# why
 
 # We can override this variable to change the binary to use
 # for ocp-build
 ifeq ($(OCP_BUILD),)
 OCP_BUILD:=ocp-build
+OCP_BUILD:=ocp-build.asm
 endif
 
 _obuild: Makefile
