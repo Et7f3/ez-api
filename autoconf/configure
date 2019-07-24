@@ -5034,7 +5034,6 @@ $as_echo "$ocaml_pkg_version" >&6; }
       break
     fi
   done
-  export found=e
   if test "$found" = "no" ; then
     { $as_echo "$as_me:${as_lineno-$LINENO}: result: not found" >&5
 $as_echo "not found" >&6; }
@@ -5446,7 +5445,6 @@ $as_echo "$ocaml_pkg_version" >&6; }
       break
     fi
   done
-#  export found=e
   if test "$found" = "no" ; then
     { $as_echo "$as_me:${as_lineno-$LINENO}: result: not found" >&5
 $as_echo "not found" >&6; }

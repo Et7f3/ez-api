@@ -28,9 +28,12 @@
     "@opam/js_of_ocaml-ocamlbuild": "*",
     "@opam/js_of_ocaml-lwt": "*",
     "ocp-build": "*",
+    "@opam/ocurl": "*",
     "ocaml": "<4.8.0"
   },
   "resolutions": {
+    "@opam/conf-libcurl": "github:Et7f3/esy-libcurl#e65a1e87bebbe9979bac17c88608f800e71ad727",
+    "@opam/ocurl": "github:Et7f3/ocurl:opam#c6e674ee7b5ac39667ff3f2a35846e88fdae16df",
     "ocp-build": "github:Et7f3/ocp-build#94f0f92",
     "ocplib-utils-js": "github:OCamlPro/ocplib-jsutils:opam#03d592b"
   }
