@@ -16,6 +16,8 @@ all: build
 
 build: ocp-build-build $(PROJECT_BUILD)
 
+# why $(PROJECT_BUILD)
+
 install: ocp-build-install $(PROJECT_INSTALL)
 
 clean: ocp-build-clean $(PROJECT_CLEAN)
